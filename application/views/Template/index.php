@@ -111,10 +111,14 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="mainNav">
                     <ul class="nav navbar-nav">
-                        <li class="active dropdown">
-                            <a href="<?php print(base_url())?>index.php"  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Home</a>
-                        </li>
-                        <li><a href="<?php print(base_url())?>index.php/INS/about">About</a></li>
+                        
+                        <li class=" <?php if($page_select=="home"){ echo "active"; } ?>" ><a href="<?php print(base_url())?>index.php">Home</a></li>
+                        <li class=" <?php if($page_select=="about"){ echo "active"; } ?>" ><a href="<?php print(base_url())?>index.php/INS/about">About</a></li>
+                        <li class="<?php if($page_select=="product"){ echo "active"; } ?>"><a href="<?php print(base_url())?>index.php/INS/product">Product</a></li >
+                        <li class="<?php if($page_select=="service"){ echo "active"; } ?>"><a href="<?php print(base_url())?>index.php/INS/service">Service</a></li >
+                        <li class=" <?php if($page_select=="blog"){ echo "active"; } ?>"><a href="<?php print(base_url())?>index.php/INS/blog">Blog</a></li >
+                        <li class="<?php if($page_select=="contact"){ echo "active"; } ?>" ct"><a href="<?php print(base_url())?>index.php/INS/contact">contact</a></li >
+                        <?php /*<?php print(base_url())?>index.php/INS/contact*/ ?>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Pages</a>
                             <ul class="dropdown-menu" role="menu">
@@ -125,91 +129,6 @@
                                 <li><a href="404.html">404</a></li>
                             </ul>
                         </li>
-                        <li class="dropdown megaMenu">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Mega Menu</a>
-                            <ul class="dropdown-menu row m0" role="menu">
-                                <li class="listMenu">
-                                    <div class="row listTitle">sofas &amp; sectionals</div>
-                                    <ul class="nav megaInnerMenu">
-                                        <li><a href="#chairs">chairs</a></li>
-                                        <li><a href="#tables">tables</a></li>
-                                        <li><a href="#dressers">dressers</a></li>
-                                        <li><a href="#desk">desk</a></li>
-                                        <li><a href="#beds">beds</a></li>
-                                        <li><a href="#benches">benches</a></li>
-                                        <li><a href="#moroccan">moroccan</a></li>
-                                        <li><a href="#poufs">poufs</a></li>
-                                        <li><a href="#screen">screen</a></li>
-                                    </ul>
-                                </li>
-                                <li class="listMenu">
-                                    <div class="row listTitle">shop by collections</div>
-                                    <ul class="nav megaInnerMenu">
-                                        <li><a href="#bond">bond</a></li>
-                                        <li><a href="#whitaker">whitaker</a></li>
-                                        <li><a href="#arden">arden</a></li>
-                                        <li><a href="#channing">channing</a></li>
-                                        <li><a href="#delphine">delphine</a></li>
-                                        <li><a href="#jacque">jacque</a></li>
-                                        <li><a href="#lampert">lampert</a></li>
-                                    </ul>
-                                </li>
-                                <li class="boxMenu">
-                                    <div class="row listTitle">
-                                        shop by categories <a href="product.html">shop all <i class="fa fa-caret-right"></i></a>
-                                    </div>
-                                    <ul class="nav megaInnerMenu row m0">
-                                        <li><a href="product2.html">
-                                            <div class="row m0 imgHov">
-                                                <img src="<?php echo base_url() ?>public/images/menu/1.png" alt="">
-                                                <div class="row m0 hovCnt">
-                                                    <div class="row m0 hovCntInner">
-                                                        shop now <i class="fa fa-caret-right"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row m0 menuTitle">Office furniture</div>
-                                        </a></li>
-                                        <li><a href="product.html">
-                                            <div class="row m0 imgHov">
-                                                <img src="<?php echo base_url() ?>public/images/menu/2.png" alt="">
-                                                <div class="row m0 hovCnt">
-                                                    <div class="row m0 hovCntInner">
-                                                        shop now <i class="fa fa-caret-right"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row m0 menuTitle">sofas &amp; bed</div>
-                                        </a></li>
-                                        <li><a href="product2.html">
-                                            <div class="row m0 imgHov">
-                                                <img src="<?php echo base_url() ?>public/images/menu/3.png" alt="">
-                                                <div class="row m0 hovCnt">
-                                                    <div class="row m0 hovCntInner">
-                                                        shop now <i class="fa fa-caret-right"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row m0 menuTitle">dinning tables</div>
-                                        </a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Product</a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="product.html">Products</a></li>
-                                <li><a href="product2.html">Products 2</a></li>
-                                <li><a href="single-product.html">Single Product</a></li>
-                                <li><a href="catalog.html">Catalog</a></li>
-                                <li><a href="cart.html">Cart</a></li>
-                                <li><a href="checkout.html">Checkout</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="<?php print(base_url())?>index.php/INS/service">Service</a></li>
-                        <li><a href="<?php print(base_url())?>index.php/INS/blog">Blog</a></li>
-                        <li><a href="<?php print(base_url())?>index.php/INS/contact">Contact Us</a></li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
@@ -345,9 +264,9 @@
                     <div class="fleft">&copy; 2019 <a href="index.html">FurnitureHouse</a> All Rights Reserved.</div>
                     <ul class="nav nav-pills fright">
                         <li><a href="<?php print(base_url())?>index.php">Home</a></li>
-                        <li><a href="<?php print(base_url())?>index.php/INS/about.php">about</a></li>
-                        <li><a href="<?php print(base_url())?>index.php/INS/blog.php">blog</a></li>
-                        <li><a href="<?php print(base_url())?>index.php/INS/contact.php">contact</a></li>
+                        <li><a href="<?php print(base_url())?>index.php/INS/about">about</a></li>
+                        <li><a href="<?php print(base_url())?>index.php/INS/blog">blog</a></li>
+                        <li><a href="<?php print(base_url())?>index.php/INS/contact">contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -395,5 +314,10 @@
 
     <!--Strella JS-->
     <script src="<?php echo base_url() ?>public/js/furniture.js"></script>
+
+    
+</script>
 </body>
 </html>
+<script>
+
