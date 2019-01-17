@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Furniture House - Furniture Shopping Template</title>
-
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <!--Favicons-->
     <link rel="apple-touch-icon" sizes="57x57" href="<?php echo base_url() ?>favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="<?php echo base_url() ?>favicon/apple-icon-60x60.png">
@@ -45,6 +46,7 @@
       <script src="js/html5shiv.min.js"></script>
       <script src="js/respond.min.js"></script>
     <![endif]-->
+   
 </head>
 <body>
 
@@ -110,15 +112,9 @@
                 <div class="collapse navbar-collapse" id="mainNav">
                     <ul class="nav navbar-nav">
                         <li class="active dropdown">
-                            <a href="index.html"  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Home</a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="index.html">Home Default</a></li>
-                                <li><a href="index3.html">Home 2</a></li>
-                                <li><a href="index2.html">Home - Menu 2</a></li>
-                                <li><a href="index3.html">Home 2 - Menu 2</a></li>
-                            </ul>
+                            <a href="<?php print(base_url())?>index.php"  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Home</a>
                         </li>
-                        <li><a href="about.html">About</a></li>
+                        <li><a href="<?php print(base_url())?>index.php/INS/about">About</a></li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Pages</a>
                             <ul class="dropdown-menu" role="menu">
@@ -211,9 +207,9 @@
                                 <li><a href="checkout.html">Checkout</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">Living Rooms</a></li>
-                        <li><a href="#">solidwood</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="<?php print(base_url())?>index.php/INS/service">Service</a></li>
+                        <li><a href="<?php print(base_url())?>index.php/INS/blog">Blog</a></li>
+                        <li><a href="<?php print(base_url())?>index.php/INS/contact">Contact Us</a></li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
@@ -225,7 +221,7 @@
         <div class="row sliderCont flexslider m0">
             <ul class="slides nav">
                 <li>
-                    <img src="<?php echo base_url() ?>public/images/slider/1.png" alt="">
+                    <img src="<?php echo base_url() ?>public/images/slider/2.png" alt="">
                     <div class="text_lines row m0">
                         <div class="container p0">
                             <h1>Good Network</h1>
@@ -348,10 +344,10 @@
                 <div class="row">
                     <div class="fleft">&copy; 2019 <a href="index.html">FurnitureHouse</a> All Rights Reserved.</div>
                     <ul class="nav nav-pills fright">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">about</a></li>
-                        <li><a href="blog.html">blog</a></li>
-                        <li><a href="contact.html">contact</a></li>
+                        <li><a href="<?php print(base_url())?>index.php">Home</a></li>
+                        <li><a href="<?php print(base_url())?>index.php/INS/about.php">about</a></li>
+                        <li><a href="<?php print(base_url())?>index.php/INS/blog.php">blog</a></li>
+                        <li><a href="<?php print(base_url())?>index.php/INS/contact.php">contact</a></li>
                     </ul>
                 </div>
             </div>
