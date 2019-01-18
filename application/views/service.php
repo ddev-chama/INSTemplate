@@ -1,6 +1,7 @@
+<h2 class="section-title mb-2 h1" style="background-color:#3ab54a;font-family:'Montserrat', sans-serif;margin:0px;padding:15px;color:white;font-size:36px;">SERVICE</h2>
 <section id="what-we-do" style="margin:50px">
     <div class="container-fluid">
-        <h2 class="section-title mb-2 h1" style="color:#ed7200">SERVICE</h2><BR></BR>
+        <BR></BR>
         <div class="row mt-5">
             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-3">
                 <div class="card">

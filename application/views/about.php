@@ -1,5 +1,5 @@
 
-<div class="jumbotron" style="background-color:white">
+<div class="jumbotron" style="background-color:white;font-family:'Montserrat', 'sans-serif';">
     <div class="container">
         <h2 style="color: #f5b352">บริษัท อินเตอร์เนชั่นแนล เน็ตเวิร์ค ซิสเต็ม | International Network System Co., Ltd.</h4>
             <p><span style="col3ab54aor: #000000">บริษัท อินเตอร์เนชั่นแนล เน็ตเวิร์ค ซิสเต็ม จำกัด หรือเรียกย่อๆว่า “ITNS”
@@ -26,3 +26,8 @@
                     เพื่อให้ทางลูกค้าได้มีความเชื่อมั่นในประสิทธิภาพและศักยภาพในการดำเนินงานให้แก่ลูกค้า</span></p>
         </div>
 </div>  
+<style>
+.jumbotron p{
+    font-size:18px;
+}
+</style>

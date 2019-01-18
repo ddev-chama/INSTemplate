@@ -1,6 +1,6 @@
 <style>
   .io {
-    font-family: Arial;
+    font-family:'Montserrat', sans-serif;
     background: #f1f1f1
   }
   .card {
@@ -11,6 +11,7 @@
   }
 </style>
 <!--content of blog-->
+<div style="background-color:#3ab54a;font-family:'Montserrat', sans-serif;margin:0px;padding:15px;color:white;font-size:36px;">BLOG</div>
 <div class="io">
       <div class="card">
         <h2>Cisco Announces Intent to Acquire Luxtera</h2>
