@@ -46,7 +46,38 @@
       <script src="js/html5shiv.min.js"></script>
       <script src="js/respond.min.js"></script>
     <![endif]-->
-   
+<style>
+.avatar_img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 60%;
+    max-width: 5.875rem;
+    max-height: 5.875rem;
+    border: 0;
+}
+#header .logo_line .searchSec .wishlistCompare {
+    width: 168px;
+    padding: 0;
+} 
+.wishlistCompare ul {
+  margin: 0;
+  list-style-type: none;
+  padding: 0;
+  overflow: hidden;
+}
+    .wishlistCompare li{
+    display:block;
+    float:left;
+    padding: 8px;
+}
+.nav_top{
+    position: fixed;
+    background-color:white;
+    width:100%;
+    top:0;
+}
+</style>   
 </head>
 <body>
 
@@ -85,16 +116,11 @@
                             </form>
                         </div>
                         <div class="fleft wishlistCompare">
-                            <ul class="nav">
-                                <li><a href="#"><i class="fa fa-heart"></i> Wishlist (3)</a></li>
-                                <li><a href="#"><i class="fa fa-exchange"></i> Compare (2)</a></li>
-                            </ul>
+                            <ul><li><h4 style="padding: 14px;">mario</h4></li>
+                            <li><img class="avatar_img" src="https://cf.shopee.co.th/file/3c2a9bc79c1612a297e12f2af224130b_tn" alt=""></li></ul>
                         </div>
-                        <div class="fleft cartCount">
-                            <div class="cartCountInner row m0">
-                                <span class="badge">2</span>
-                            </div>
                         </div>
+                        
                     </div>
                 </div>
             </div>
@@ -119,16 +145,6 @@
                         <li class=" <?php if($page_select=="blog"){ echo "active"; } ?>"><a href="<?php print(base_url())?>index.php/INS/blog">Blog</a></li >
                         <li class="<?php if($page_select=="contact"){ echo "active"; } ?>" ct"><a href="<?php print(base_url())?>index.php/INS/contact">contact</a></li >
                         <?php /*<?php print(base_url())?>index.php/INS/contact*/ ?>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Pages</a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="services.html">Services</a></li>
-                                <li><a href="blog.html">Blog</a></li>
-                                <li><a href="single-post.html">Single Post</a></li>
-                                <li><a href="shortcodes.html">Shortcodes</a></li>
-                                <li><a href="404.html">404</a></li>
-                            </ul>
-                        </li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
@@ -314,9 +330,21 @@
 
     <!--Strella JS-->
     <script src="<?php echo base_url() ?>public/js/furniture.js"></script>
+    <script>
+    $(document).ready(function(){
+	   $(window).bind('scroll', function() {
+	   var navHeight = $( window ).height() - 430;
+			 if ($(window).scrollTop() > navHeight) {
+				 $('nav').addClass('nav_top');
+			 }
+			 else {
+				 $('nav').removeClass('nav_top');
+			 }
+		});
+	});
 
+    </script>
     
-</script>
 </body>
 </html>
 <script>
