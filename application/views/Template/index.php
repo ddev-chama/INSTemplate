@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Furniture House - Furniture Shopping Template</title>
+    <title>ITNS - Advanced IT Network Solutions To Help You Excel In Your Business</title>
     <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
 <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <!--Favicons-->
@@ -87,36 +87,13 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-5 logo" style="padding-top: 25px">
-                        <a href="#" class="logo_a"><img src="<?php echo base_url() ?>public/images/logo.png" alt="Furniture House"></a>
+                        <a href="#" class="logo_a"><img src="<?php echo base_url() ?>public/images/logo.gif" alt="Furniture House"></a>
                     </div>
-                    <div class="col-sm-7 searchSec" style="padding-top: 25px">
-                        <div class="fleft searchForm">
-                            <form action="#" method="get">
-                                <div class="input-group">
-                                    <input type="hidden" name="search_param" value="all" id="search_param">
-                                    <input type="search" class="form-control" placeholder="Search Products">
-                                    <div class="input-group-btn searchFilters">
-                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                                            <span id="searchFilterValue">All Categories</span> <i class="fa fa-angle-down"></i>
-                                        </button>
-                                        <ul class="dropdown-menu dropdown-menu-right" role="menu">
-                                            <li><a href="#all">All Categories</a></li>
-                                            <li><a href="#chairs">chairs</a></li>
-                                            <li><a href="#tables">tables</a></li>
-                                            <li><a href="#dressers">dressers</a></li>
-                                            <li><a href="#desk">desk</a></li>
-                                            <li><a href="#beds">beds</a></li>
-                                            <li><a href="#benches">benches</a></li>
-                                        </ul>
-                                    </div><!-- /btn-group -->
-                                    <span class="input-group-btn searchIco">
-                                        <button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
-                                    </span>
-                                </div><!-- /input-group -->
-                            </form>
-                        </div>
+                    <div class="col-sm-2 searchSec" style="padding-top: 25px;margin-left:480px;">
+                        
                         <div class="fleft wishlistCompare">
-                            <ul><li><h4 style="padding: 14px;">mario</h4></li>
+                            <ul>
+                            <li><h4 style="padding: 14px;"><i class="icon-user" style="margin-right:10px;"></i>mario</h4></li>
                             <li><img class="avatar_img" src="https://cf.shopee.co.th/file/3c2a9bc79c1612a297e12f2af224130b_tn" alt=""></li></ul>
                         </div>
                         </div>
@@ -126,6 +103,7 @@
             </div>
         </div>
         <nav class="navbar navbar-default m0 navbar-static-top">
+        
             <div class="container-fluid container">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
@@ -137,7 +115,7 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="mainNav">
                     <ul class="nav navbar-nav">
-                        
+                        <li><img src="<?php print(base_url())?>public/images/logo.gif" width="200px" alt=""></li>
                         <li class=" <?php if($page_select=="home"){ echo "active"; } ?>" ><a href="<?php print(base_url())?>index.php">Home</a></li>
                         <li class=" <?php if($page_select=="about"){ echo "active"; } ?>" ><a href="<?php print(base_url())?>index.php/INS/about">About</a></li>
                         <li class="<?php if($page_select=="product"){ echo "active"; } ?>"><a href="<?php print(base_url())?>index.php/INS/product">Product</a></li >
@@ -336,9 +314,11 @@
 	   var navHeight = $( window ).height() - 430;
 			 if ($(window).scrollTop() > navHeight) {
 				 $('nav').addClass('nav_top');
-			 }
+                 $("nav").slideDown("slow");
+                 $('#theDiv').prepend('<img id="theImg" src="theImg.png" />')
+             }
 			 else {
-				 $('nav').removeClass('nav_top');
+				$('nav').removeClass('nav_top');
 			 }
 		});
 	});
